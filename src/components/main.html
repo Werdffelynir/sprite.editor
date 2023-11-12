@@ -1,0 +1,50 @@
+<div data-id="main">
+    <div data-id="control" class="flex fl-v-between fl-h-stretch fl-stretch">
+        <div>
+            <div>Origin size</div>
+            <p>
+                <input data-id="tile_w" type="number"> x <input data-id="tile_h" type="number">
+            </p>
+            <div>Sprite size</div>
+            <p>
+                <input data-id="size_w" type="number" value="32"> x <input data-id="size_h" type="number" value="32">
+            </p>
+        </div>
+        <div class="flex">
+            <div>
+                <div class="margin-5">
+                    <input data-id="file" type="file" class="hide">
+                    <div data-id="ico_file" class="ico_file"></div> <span>Upload image</span>
+                </div>
+                <div>Sprite resize</div>
+                <p>
+                    <input data-id="resize_w" type="number" value="32"> x <input data-id="resize_h" type="number" value="32">
+                </p>
+                <div class="margin-top-10">
+                    <input data-id="withnumber" type="checkbox" id="control" checked>
+                    <label for="control">With Numbers</label>
+                </div>
+            </div>
+            <div class="margin-5">
+                <div data-id="onsplit" class="button">Split to sprites</div>
+            </div>
+        </div>
+        <div class="width-290px">
+            <div class="flex fl-center">
+                <div data-id="color"></div>
+                <div>
+                    <div data-id="onalpha" class="button">color to alpha</div>
+                </div>
+            </div>
+            <div class="margin-top-30">
+                <div data-id="color_rgb">&nbsp;</div>
+                <h4>x: <span data-id="x">0</span> y: <span data-id="y">0</span></h4>
+            </div>
+        </div>
+    </div>
+    <div data-id="tile">
+        <canvas data-id="canvas"></canvas>
+    </div>
+    <div data-id="tiles" class="flex"></div>
+    <div data-id="base64" class="flex"></div>
+</div>
