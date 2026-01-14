@@ -212,6 +212,23 @@ export const download = (data, filename, file_type = 'text') => {
     document.body.removeChild(link)
 }
 
+export function toAlphaImageData(canvas, px) {
+    const context = canvas.getContext('2d');
+    const idata = context.getImageData(0, 0, canvas.width, canvas.height);
+    for (let i = 0; i < idata.data.length; i += 4) {
+        if (
+            idata.data[i + 0] === px.data[0]
+            &&
+            idata.data[i + 1] === px.data[1]
+            &&
+            idata.data[i + 2] === px.data[2]
+        ) {
+            idata.data[i + 3] = 0;
+        }
+    }
+    context.putImageData(idata, 0, 0);
+}
+
 
 
 

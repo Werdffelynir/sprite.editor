@@ -1,3 +1,20 @@
+
+@media (max-width: 1080px) {
+    [data-id="main"]{
+        width: 100vw;
+        margin: 0 auto;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 860px) {
+    [data-id="control"]{
+        display: block;
+    }
+}
+
+
+
 [data-id="main"]{
     width: 90vw;
     margin: 0 auto;
@@ -40,17 +57,7 @@ input[type="number"]{
 [data-id="color_rgb"]{
     font-size: 12px;
 }
-
-@media (max-width: 1080px) {
-    [data-id="main"]{
-        width: 100vw;
-        margin: 0 auto;
-        padding: 5px;
-    }
-}
-
-@media (max-width: 860px) {
-    [data-id="control"]{
-        display: block;
-    }
+[for="selectable"]{
+    font-weight: bold;
+    font-size: 140%;
 }

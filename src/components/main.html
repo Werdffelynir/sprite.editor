@@ -14,14 +14,16 @@
             <div>
                 <div class="margin-5">
                     <input data-id="file" type="file" class="hide">
-                    <div data-id="ico_file" class="ico_file"></div> <span>Upload image</span>
+                    <div data-id="ico_file" class="ico_file"></div>
+                    <span>Upload image</span>
                 </div>
                 <div>Sprite resize</div>
                 <p>
-                    <input data-id="resize_w" type="number" value="32"> x <input data-id="resize_h" type="number" value="32">
+                    <input data-id="resize_w" type="number" value="32"> x <input data-id="resize_h" type="number"
+                                                                                 value="32">
                 </p>
                 <div class="margin-top-10">
-                    <input data-id="withnumber" type="checkbox" id="control" checked>
+                    <input data-id="withnumber" type="checkbox" id="control">
                     <label for="control">With Numbers</label>
                 </div>
             </div>
@@ -39,6 +41,30 @@
             <div class="margin-top-30">
                 <div data-id="color_rgb">&nbsp;</div>
                 <h4>x: <span data-id="x">0</span> y: <span data-id="y">0</span></h4>
+            </div>
+        </div>
+        <div class="width-290px">
+            <div class="">
+
+                <div>
+                    <input data-id="selectable" type="checkbox" id="selectable">
+                    <label for="selectable"> Cut part of image </label>
+                    <div data-id="selectCopyBtn" class="button">create</div>
+                </div>
+            </div>
+            <div class="text-right">
+                <p>
+                    <label> from x: <input data-id="selectFromX" type="number"> </label>
+                    <label> y      <input data-id="selectFromY" type="number"> </label>
+                </p>
+                <p>
+                    <label> to x: <input data-id="selectToX" type="number"> </label>
+                    <label> y      <input data-id="selectToY" type="number"> </label>
+                </p>
+                <p>
+                    <label> resize: <input data-id="selectSizeWidth" type="number"> </label>
+                    <label> x <input data-id="selectSizeHeight" type="number"> </label>
+                </p>
             </div>
         </div>
     </div>
